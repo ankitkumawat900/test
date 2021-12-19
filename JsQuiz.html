@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+    
+    <script type="text/javascript">
+    	function chechAnswers() {
+    		var myQuiz = document.getElementById('myQuiz');
+
+    		if(myQuiz.elements[1].checked)
+    			alert("Congratulations, your answer is correct");
+    		else
+    			alert("Opps....your answer is incorrect, Please try again later");
+    	}
+    </script>
+</head>
+<body>
+
+	<form action="" id="myQuiz" onsubmit="chechAnswers()">
+		<p>Select the image of the tip that goes with the image shown:</p>
+		<img src="profile.png" alt="proofile photo"><br>
+		<input type="radio" name="radiobutton" value="CPE">
+		<label>Common Progrmming Error</label>
+		<input type="radio" name="radiobutton" value="EPT">
+		<label>Error-Prevention Tip</label>
+		<input type="radio" name="radiobutton" value="PERF">
+		<label>Performence Tip</label>
+		<input type="radio" name="radiobutton" value="PORT">
+		<label>Portability Tip</label><br><br>
+		<input type="submit" name="submit" value="Submit">
+		<input type="reset" name="reset" value="reset">
+		
+	</form>
+
+</body>
+</html>
